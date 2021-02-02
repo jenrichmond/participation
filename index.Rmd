@@ -1,0 +1,56 @@
+--- 
+title: "PSYC2061: Participation activities"
+author: "A/Prof Jenny Richmond"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+github-repo: rstudio/bookdown-demo
+description: "This book contains details of the participation activity options for PSYC2061."
+---
+
+# Your task
+
+You can complete as many of the participation activities as you like. Each is worth 1% and you can earn up to a maximum of 5% by logging your completion on Moodle. There are 16 activity options in total and they are grouped into 3 different categories.  
+
+**1. Looking forward**
+
++ These activities involve goal setting, planning your time, and thinking about strategies that you can employ to maximise the likelihood of success this term. 
+
+**2. Looking back**
+
++ These activities involve thinking hard about your approach to assessment and how you are going along the way. They also give you an opportunity to reflect on feedback you have received and to work through the process of using feedback to improve your work. 
+
+**3. Engaging with the content**
+
++ These activities involve practicing key critical thinking skills and  evidenced-based revision strategies. They also encourage you to think about how what you are learning relates to what you already know, what you are learning in other courses, and what you see in the real world. 
+
+
+```{r message=FALSE, warning=FALSE, include=FALSE}
+
+library(readr)
+library(dplyr)
+library(gt)
+
+list <- read_csv("list.csv") %>%
+  as.data.frame() %>%
+  select(-1)
+
+
+```
+
+Use this table to filter different activities, see when each is due, and plan which ones you might like to engage with. 
+
+```{r echo=FALSE}
+list %>%
+  DT::datatable(filter = 'top', options = list(
+  pageLength = 5, autoWidth = TRUE, rownames = FALSE
+))
+```
+
+
+You can find editable .docx versions of all the activity templates in this [OneDrive folder](https://unsw-my.sharepoint.com/:f:/g/personal/z4513203_ad_unsw_edu_au/EnznzZ02XJJDppfyAfAcklYBy59ugHwuK_CZ8aUFYE82Qw?e=mOnIqI)
+
