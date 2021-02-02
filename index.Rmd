@@ -8,7 +8,7 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-github-repo: rstudio/bookdown-demo
+github-repo: jenrichmond/participation
 description: "This book contains details of the participation activity options for PSYC2061."
 ---
 
